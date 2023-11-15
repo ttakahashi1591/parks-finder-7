@@ -1,0 +1,9 @@
+<h1><%= @facade.parks.size %> Results</h1>
+<% @facade.parks.each do |park| %>
+  <ul class="park">
+    <li class="name"><%= park.name %></li>
+    <li class="description"><%= park.description %></li>
+    <li class="direction_info"><%= park.direction_info %></li>
+    <li class="hoop"><%= park.hoop %></li>
+  </ul>
+<% end %>
