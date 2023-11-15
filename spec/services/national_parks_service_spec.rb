@@ -22,7 +22,7 @@ describe NationalParksService do
 
         expect(park_data).to have_key :operatingHours
         expect(park_data[:operatingHours][0]).to have_key :standardHours
-        expect(park_data[:operatingHours][0][:standardHours]).to be_a(String)
+        expect(park_data[:operatingHours][0][:standardHours]).to be_a(Hash)
       end
     end
   end
